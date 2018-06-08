@@ -10,9 +10,18 @@ SASS:
 
 File Structure:
   - Good article: https://hackernoon.com/the-100-correct-way-to-structure-a-react-app-or-why-theres-no-such-thing-3ede534ef1ed
-  -
+
 
 Webpack issues:
   - Implicit file resolve, babel-loader wouldn't recognize .jsx files,
       Settings here worked: https://www.robinwieruch.de/minimal-react-webpack-babel-setup/
-  -
+
+
+
+Eslint Airbnb Config:
+  - install-peerdeps, global,
+    = https://github.com/airbnb/javascript/tree/master/packages/eslint-config-airbnb
+  - AirBnb Style Guide: https://github.com/airbnb/javascript
+
+  - ISSUES:
+    = CRLF/LF End of line: https://github.com/jlengstorf/learn-rollup/issues/8
