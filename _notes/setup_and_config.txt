@@ -1,33 +1,47 @@
-For webpack, react, & babel config and set-up:
-  - Webpack 4 Starter Tutorial:
-    = https://www.valentinog.com/blog/webpack-4-tutorial/
-  - Webpack 4 SurviveJS:
-    = https://survivejs.com/webpack/developing/getting-started/
+DAY 1
 
-SASS:
-  - Sass Loader: https://www.npmjs.com/package/sass-loader
-    = node-sass, sass-loader, style-loader
+  Webpack, React, & Babel:
+    - Webpack 4 Starter Tutorial:
+      = https://www.valentinog.com/blog/webpack-4-tutorial/
+    - Webpack 4 SurviveJS:
+      = https://survivejs.com/webpack/developing/getting-started/
+    - $ npm init
+    - $ git init
+  SASS:
+    - Sass Loader: https://www.npmjs.com/package/sass-loader
+      = node-sass, sass-loader, style-loader
+  File Structure:
+    - Good article: https://hackernoon.com/the-100-correct-way-to-structure-a-react-app-or-why-theres-no-such-thing-3ede534ef1ed
+  Webpack issues:
+    - Implicit file resolve, babel-loader wouldn't recognize .jsx files,
+        Settings here worked: https://www.robinwieruch.de/minimal-react-webpack-babel-setup/
 
-File Structure:
-  - Good article: https://hackernoon.com/the-100-correct-way-to-structure-a-react-app-or-why-theres-no-such-thing-3ede534ef1ed
 
+DAY 2:
+  Eslint Airbnb Config:
+    - install-peerdeps (global);
+      = https://github.com/airbnb/javascript/tree/master/packages/eslint-config-airbnb
+    - AirBnb Style Guide: https://github.com/airbnb/javascript
+    - babel-eslint: https://github.com/babel/babel-eslint
+    - prettier/eslint : https://www.youtube.com/watch?v=YIvjKId9m2c
+      = $ install-peerdeps eslint-plugin-prettier
 
-Webpack issues:
-  - Implicit file resolve, babel-loader wouldn't recognize .jsx files,
-      Settings here worked: https://www.robinwieruch.de/minimal-react-webpack-babel-setup/
+    ========================!!! ISSUES !!! ========================
+      Prior-Knowledge:
+        = CRLF/LF End of line: https://github.com/jlengstorf/learn-rollup/issues/8
+        = allow both .js and .jsx: https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/jsx-filename-extension.md
 
+  React:
+    - Need Closing Tag with self-contained elements: '/src/layouts/Layout.jsx'
+      = https://stackoverflow.com/questions/30852751/expected-corresponding-jsx-closing-tag-for-input-reactjs
+    - Comments in JSX:
+      = https://wesbos.com/react-jsx-comments/
 
+  Layout:
+    * Progressive Enhancement, Mobile-First, Responsive Design:
+      ** using google chrome device toolbar with setting "iPhone 6/7/8", low-end-mobile
 
-Eslint Airbnb Config:
-  - install-peerdeps (global);
-    = https://github.com/airbnb/javascript/tree/master/packages/eslint-config-airbnb
-  - AirBnb Style Guide: https://github.com/airbnb/javascript
-  - babel-eslint: https://github.com/babel/babel-eslint
-  - prettier/eslint : https://www.youtube.com/watch?v=YIvjKId9m2c
-    = $ install-peerdeps eslint-plugin-prettier
-
-  - ISSUES
-    [Known, and bookmarked]:
-      = CRLF/LF End of line: https://github.com/jlengstorf/learn-rollup/issues/8
-      = allow both .js and .jsx: https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/jsx-filename-extension.md
-    [Unknown and gathered]
+    - Header
+      = Logo:
+        += Original size for logo is too large to load effecitently with low-end mobile setting in chrome
+        += file-loader: https://survivejs.com/webpack/loading/images/#setting-up-file-loader
