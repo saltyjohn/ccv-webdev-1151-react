@@ -1,0 +1,18 @@
+For webpack, react, & babel config and set-up:
+  - Webpack 4 Starter Tutorial:
+    = https://www.valentinog.com/blog/webpack-4-tutorial/
+  - Webpack 4 SurviveJS:
+    = https://survivejs.com/webpack/developing/getting-started/
+
+SASS:
+  - Sass Loader: https://www.npmjs.com/package/sass-loader
+    = node-sass, sass-loader, style-loader
+
+File Structure:
+  - Good article: https://hackernoon.com/the-100-correct-way-to-structure-a-react-app-or-why-theres-no-such-thing-3ede534ef1ed
+  -
+
+Webpack issues:
+  - Implicit file resolve, babel-loader wouldn't recognize .jsx files,
+      Settings here worked: https://www.robinwieruch.de/minimal-react-webpack-babel-setup/
+  -
