@@ -1,0 +1,13 @@
+React:
+  - Need Closing Tag with self-contained elements: '/src/layouts/Layout.jsx'
+    = https://stackoverflow.com/questions/30852751/expected-corresponding-jsx-closing-tag-for-input-reactjs
+  - Comments in JSX:
+    = https://wesbos.com/react-jsx-comments/
+
+Layout:
+  * Progressive Enhancement, Mobile-First, Responsive Design:
+    ** using google chrome device toolbar with setting "iPhone 6/7/8", low-end-mobile
+
+  - Header
+    = Logo:
+      += Original size for logo is too large to load effecitently with low-end mobile setting in chrome
