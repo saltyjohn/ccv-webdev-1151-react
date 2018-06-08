@@ -19,9 +19,15 @@ Webpack issues:
 
 
 Eslint Airbnb Config:
-  - install-peerdeps, global,
+  - install-peerdeps (global);
     = https://github.com/airbnb/javascript/tree/master/packages/eslint-config-airbnb
   - AirBnb Style Guide: https://github.com/airbnb/javascript
+  - babel-eslint: https://github.com/babel/babel-eslint
+  - prettier/eslint : https://www.youtube.com/watch?v=YIvjKId9m2c
+    = $ install-peerdeps eslint-plugin-prettier
 
-  - ISSUES:
-    = CRLF/LF End of line: https://github.com/jlengstorf/learn-rollup/issues/8
+  - ISSUES
+    [Known, and bookmarked]:
+      = CRLF/LF End of line: https://github.com/jlengstorf/learn-rollup/issues/8
+      = allow both .js and .jsx: https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/jsx-filename-extension.md
+    [Unknown and gathered]
