@@ -1,11 +1,11 @@
 import React from "react";
 import ReactDOM from "react-dom";
 
-import './scss/main.scss'
+import './index.scss'
 
 // Webpack won't resolve implicitly imported .jsx files, must specify exact file name
 // UPDATE: check webpack.config.js ==> resolve: ['*', '.js', '.jsx']
-import Layout from './layout/Layout'
+import App from './components/App'
 
 
-ReactDOM.render(<Layout />, document.getElementById("root"));
+ReactDOM.render(<App />, document.getElementById("root"));

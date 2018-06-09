@@ -1,5 +1,5 @@
 import React from 'react';
-import './layout.scss'
+import './scss/layout.scss'
 
 const Layout = () => (
   <div id="jrs-web">
@@ -15,11 +15,13 @@ const Layout = () => (
         <h1 id="header-title">
           <span>
             JRS
-            </span>web
+          </span>
+          <span>
+            web
+          </span>
         </h1>
       </div>
       <nav>
-
       </nav>
     </header>
   </div>

@@ -1,15 +1,16 @@
 @import url(https://fonts.googleapis.com/css?family=EB+Garamond);
 
-@mixin font-set($size, $weight, $style: normal, $family: 'EB Garamond') {
+@mixin font-set($size, $weight, $color: $header-white, $style: normal, $family: 'EB Garamond') {
   font: {
     size: $size;
     weight: $weight;
     family: $family;
     style: $style;
   }
+  color: $color;
 }
 
-$site-white: #f5f5f5;
+$header-white: #f5f5f5;
 
 header {
   display: flex;
@@ -24,17 +25,13 @@ header {
     height: 250px;
 
     #header-title { // "JRSweb" header
-      @include font-set(5rem, 400, italic);
+      @include font-set(5rem, 400, #000, italic);
       margin-left: 1.5rem;
-      text: {
-        decoration: underline;
-        decoration-color: $site-white;
-      }
+      text-decoration: underline;
+      text-decoration-color: $header-white;
 
-      span { // "JRS" only
-        color: $site-white;
-        font-weight: 800;
-        font-style: normal;
+      span:first-child { // "JRS" only
+        @include font-set(5rem, 700)
       }
     }
 
