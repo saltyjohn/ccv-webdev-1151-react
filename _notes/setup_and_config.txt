@@ -45,3 +45,9 @@ DAY 2:
       = Logo:
         += Original size for logo is too large to load effecitently with low-end mobile setting in chrome
         += file-loader: https://survivejs.com/webpack/loading/images/#setting-up-file-loader
+
+
+Day 3:
+  - Header and Logo:
+    - Filled in layout.scss, mostly relearning variables, mixins, imported fonts, css shorthands
+    - am thinking about looking into autoprefixer when I settle the logo loading time
