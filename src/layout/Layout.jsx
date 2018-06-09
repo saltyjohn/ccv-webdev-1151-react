@@ -1,9 +1,10 @@
 import React from 'react';
+import './layout.scss'
 
 const Layout = () => (
   <div id="jrs-web">
     <header>
-      <div id="home-link">
+      <div id="name-logo-container">
         {/*
           JSX requires closing tag for self-contained elements, <img> => <img />,
           images loaded through webpack-dev-server must be root-relative because
@@ -11,17 +12,14 @@ const Layout = () => (
           file-loader: https://survivejs.com/webpack/loading/images/#setting-up-file-loader-
         */}
         <img src="/src/layout/images/logo_max_optimized_svg.svg" />
-        <h1>
-          JRSweb
+        <h1 id="header-title">
+          <span>
+            JRS
+            </span>web
         </h1>
       </div>
-      <nav id="header-nav">
-        <a className="header-link" href="#">
-          Assignments
-        </a>
-        <a href="#">
-          About
-        </a>
+      <nav>
+
       </nav>
     </header>
   </div>
