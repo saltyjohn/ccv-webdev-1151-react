@@ -51,3 +51,7 @@ Day 3:
   - Header and Logo:
     - Filled in layout.scss, mostly relearning variables, mixins, imported fonts, css shorthands
     - am thinking about looking into autoprefixer when I settle the logo loading time
+    - dropped the size of Logo from ~700x900 (optimized SVG) to ~167x172 (png)
+      = increased load-time on 3g mid-tier by 300% (~7.2s to ~2.2s)
+  - Webpack:
+    = need to go back and read about composition of webpack (getting started - webpack composition)

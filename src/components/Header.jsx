@@ -1,4 +1,6 @@
 import React from 'react';
+
+import logo from '../images/logo.png'
 import '../scss/header.scss';
 
 /*
@@ -12,7 +14,7 @@ const Layout = () => (
   <div id="jrs-web">
     <header>
       <div id="name-logo-container">
-        <img src="/src/images/logo_png_compressed.png" />
+        <img src={logo} />
         <h1 id="header-title">
           <span>
             JRS
