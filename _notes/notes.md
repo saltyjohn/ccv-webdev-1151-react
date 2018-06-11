@@ -28,7 +28,6 @@
     = $ install-peerdeps eslint-plugin-prettier
 
 ## ==========!!! ESLINT ISSUES !!!==========
-### Prior-Knowledge:
   - CRLF/LF End of line: https://github.com/jlengstorf/learn-rollup/issues/8
   - allow both .js and .jsx: https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/jsx-filename-extension.md
 
