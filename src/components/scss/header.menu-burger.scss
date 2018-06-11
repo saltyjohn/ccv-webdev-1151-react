@@ -1,0 +1,18 @@
+@import 'master';
+
+#menu-burger {
+  // reset styling:
+  background: none;
+  color: $header-text-white;
+  outline: none;
+
+  // set styling
+  font-size: 5rem;
+  margin-right: 2rem;
+  border: {
+    width: 10px;
+    style: solid;
+    color: $header-text-white;
+    radius: 2rem;
+  }
+}

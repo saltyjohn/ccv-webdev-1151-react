@@ -1,11 +1,13 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
+import './scss/header.menu-burger.scss';
+
 const MenuBurger = props => {
   const currentIcon = props.open ? `fa fa-close` : `fa fa-navicon`;
   return (
-    <button onClick={props.onClick}>
-      <i className={currentIcon} />
+    <button id="menu-burger" onClick={props.onClick}>
+      <i id="menu-button" className={currentIcon} />
     </button>
   );
 };

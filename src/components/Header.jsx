@@ -1,32 +1,20 @@
-import React, { Component } from 'react';
+import React from 'react';
+import PropTypes from 'prop-types';
 
 import NameLogo from './Header.NameLogo';
 import MenuBurger from './Header.MenuBurger';
 import './scss/header.scss';
 
-class Header extends Component {
-  constructor() {
-    super();
-    this.state = {
-      menuOpen: false,
-    };
-    this.handleClick = this.handleClick.bind(this);
-  }
+const Header = props => (
+  <header>
+    <NameLogo />
+    <MenuBurger open={props.menuOpen} onClick={props.onClick} />
+  </header>
+);
 
-  handleClick() {
-    this.setState({
-      menuOpen: !this.state.menuOpen,
-    });
-  }
-
-  render() {
-    return (
-      <header>
-        <NameLogo />
-        <MenuBurger open={this.state.menuOpen} onClick={e => this.handleClick(e)} />
-      </header>
-    );
-  }
-}
+Header.propTypes = {
+  onClick: PropTypes.func.isRequired,
+  menuOpen: PropTypes.bool.isRequired,
+};
 
 export default Header;

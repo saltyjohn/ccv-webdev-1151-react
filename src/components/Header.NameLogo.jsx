@@ -1,5 +1,6 @@
 import React from 'react';
 
+import './scss/header.name-logo.scss';
 import logo from './images/logo.png';
 
 const NameLogo = () => (
