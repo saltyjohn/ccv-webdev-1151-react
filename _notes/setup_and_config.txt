@@ -67,5 +67,7 @@ Day 4:
     = needed to update menu to <button> element, am trying text as replacement for styled <div>, thinking of using icon instead of text.
       =+ https://icons8.com/line-awesome
     = prop-validation
-  - Animate menu hamburger
-    = https://medium.com/@joethedave/achieving-ui-animations-with-react-the-right-way-562fa8a91935
+  - Show/hide Menu:
+    - ideas from:
+    - https://blog.campvanilla.com/reactjs-dropdown-menus-b6e06ae3a8fe
+    - transition: https://css-tricks.com/almanac/properties/t/transition/

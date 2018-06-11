@@ -1,9 +1,9 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-import NameLogo from './Header.NameLogo';
-import MenuBurger from './Header.MenuBurger';
-import './scss/header.scss';
+import NameLogo from './components/Header.NameLogo';
+import MenuBurger from './components/Header.MenuBurger';
+import './header.scss';
 
 const Header = props => (
   <header>

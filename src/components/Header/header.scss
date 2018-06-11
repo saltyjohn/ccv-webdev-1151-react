@@ -1,4 +1,4 @@
-@import './master';
+@import '../scss/master';
 
 header {
   display: flex;
@@ -9,3 +9,4 @@ header {
   background-color: $primary-background-color;
   color: $primary-color-black;
 }
+

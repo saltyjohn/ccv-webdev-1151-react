@@ -1,12 +1,13 @@
 import React, { Component } from 'react';
 
-import Header from './Header';
-import Menu from './App.Menu';
+import Header from './Header/Header';
+import Menu from './Header/components/Header.Menu';
 
 class App extends Component {
   constructor() {
     super();
     this.state = {
+      menuFirstLoad: true,
       menuOpen: false,
     };
     this.handleClick = this.handleClick.bind(this);
@@ -17,6 +18,7 @@ class App extends Component {
     switch (targetID) {
       case 'menu-button':
         this.setState({
+          menuFirstLoad: false,
           menuOpen: !this.state.menuOpen,
         });
         break;
@@ -26,10 +28,15 @@ class App extends Component {
   }
 
   render() {
+    const openMenu = this.state.menuOpen;
     return (
-      <div>
-        <Header menuOpen={this.state.menuOpen} onClick={this.handleClick} />
-        <Menu menuOpen={this.state.menuOpen} />
+      <div id="jrs-web">
+        <Header menuOpen={openMenu} onClick={this.handleClick} />
+        {/*
+          showHide Prop ternary for quick fix of
+          accidental 'hide' animation on first load
+        */}
+        <Menu showHide={this.state.menuFirstLoad ? '' : openMenu} />
       </div>
     );
   }

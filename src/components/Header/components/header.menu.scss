@@ -1,0 +1,43 @@
+@import '../../scss/master';
+
+#app-menu {
+  display: flex;
+  justify-content: space-around;
+  background-color: $primary-background-color;
+  text-decoration: underline overline $primary-color-orange;
+  visibility: hidden;
+
+  .menu-button {
+    @include font-set(4rem, 600, $primary-color-white);
+  }
+}
+
+#app-menu.show {
+  visibility: visible;
+  animation: fade-in .6s;
+}
+#app-menu.hide {
+  visibility: hidden;
+  animation: fade-out .6s;
+}
+
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fade-out {
+  0% {
+    visibility: visible;
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+

@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-import './scss/header.menu-burger.scss';
+import './header.menu-burger.scss';
 
 const MenuBurger = props => {
   const componentClasses = props.open ? `fa fa-close text-orange` : `fa fa-navicon text-white`;

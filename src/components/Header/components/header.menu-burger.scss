@@ -1,8 +1,10 @@
-@import 'master';
+@import '../../scss/master';
 
 #menu-burger {
   font-size: 5rem;
-  margin-right: 2rem;
+  margin-right: 3rem;
+  width: 120px;
+  height: 120px;
   border: {
     width: 10px;
     style: solid;
@@ -17,3 +19,4 @@
 .text-white {
   color: $primary-color-white;
 }
+
