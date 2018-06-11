@@ -55,3 +55,7 @@ Day 3:
       = increased load-time on 3g mid-tier by 300% (~7.2s to ~2.2s)
   - Webpack:
     = need to go back and read about composition of webpack (getting started - webpack composition)
+
+Day 4:
+  - Header:
+    = From comments:   JSX requires closing tag for self-contained elements, <img> => <img />, images loaded through webpack-dev-server must be root-relative because assets are not yet loaded in production-mode: file-loader: https://survivejs.com/webpack/loading/images/#setting-up-file-loader

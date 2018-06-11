@@ -37,31 +37,40 @@ header {
     }
 
     #header-title { // "JRSweb" header
-      @include header-font-set(5rem, 400, $header-text-black, italic);
+      @include header-font-set(5.5rem, 400, $header-text-black, italic);
       margin-left: 1.5rem;
       text-decoration: underline;
       text-decoration-color: $header-text-white;
 
       span:first-child { // "JRS" only
-        @include header-font-set(5rem, 700)
-      }
-      span:nth-child(2) { // 'w'
-        color: $header-text-gray;
+        @include header-font-set(5.5rem, 700)
       }
       span:nth-child(3) { // 'e'
         color: $header-text-orange;
-      } // 'b' is header primary black
+      }
     }
   }
+
   nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
     height: 120px;
     width: 120px;
     margin-right: 1rem;
-    border: 3px solid black;
-    #menu-icon {
-      > div {
+    border: {
+      width: 5px;
+      style: solid;
+      color: $header-text-white;
+      radius: 2rem;
+    }
 
-      }
+    div {
+      background-color: $header-text-white;
+      height: 10px;
+      width: 80%;
+      border-radius: 10px;
     }
   }
 }

@@ -1,36 +1,34 @@
-import React from 'react';
+import React, { Component } from 'react';
 
-import logo from '../images/logo.png'
-import '../scss/header.scss';
+import logo from './images/logo.png'
+import './scss/header.scss';
 
-/*
-  JSX requires closing tag for self-contained elements, <img> => <img />,
-  images loaded through webpack-dev-server must be root-relative because
-  assets are not yet loaded in production-mode:
-  file-loader: https://survivejs.com/webpack/loading/images/#setting-up-file-loader
-*/
-
-const Layout = () => (
-  <div id="jrs-web">
-    <header>
-      <div id="name-logo-container">
-        <img src={logo} />
-        <h1 id="header-title">
-          <span>JRS</span>
-          <span>w</span>
-          <span>e</span>
-          <span>b</span>
-        </h1>
-      </div>
-      <nav>
-        <div id="menu-icon">
-          <div></div>
-          <div></div>
-          <div></div>
+class Header extends Component {
+  constructor() {
+    super();
+    this.state = {}
+  }
+  render() {
+    return (
+      <header>
+        <div id="name-logo-container">
+          <img src={logo} />
+          <h1 id="header-title">
+            <span>JRS</span>
+            <span>w</span>
+            <span>e</span>
+            <span>b</span>
+          </h1>
         </div>
-      </nav>
-    </header>
-  </div>
-);
+        <nav>
+          <div></div>
+          <div></div>
+          <div></div>
+        </nav>
+      </header>
+    )
+  }
+}
 
-export default Layout;
+
+export default Header;
