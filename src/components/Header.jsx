@@ -1,34 +1,32 @@
 import React, { Component } from 'react';
 
-import logo from './images/logo.png'
+import NameLogo from './Header.NameLogo';
+import MenuBurger from './Header.MenuBurger';
 import './scss/header.scss';
 
 class Header extends Component {
   constructor() {
     super();
-    this.state = {}
+    this.state = {
+      menuOpen: false,
+    };
+    this.handleClick = this.handleClick.bind(this);
   }
+
+  handleClick() {
+    this.setState({
+      menuOpen: !this.state.menuOpen,
+    });
+  }
+
   render() {
     return (
       <header>
-        <div id="name-logo-container">
-          <img src={logo} />
-          <h1 id="header-title">
-            <span>JRS</span>
-            <span>w</span>
-            <span>e</span>
-            <span>b</span>
-          </h1>
-        </div>
-        <nav>
-          <div></div>
-          <div></div>
-          <div></div>
-        </nav>
+        <NameLogo />
+        <MenuBurger open={this.state.menuOpen} onClick={e => this.handleClick(e)} />
       </header>
-    )
+    );
   }
 }
-
 
 export default Header;

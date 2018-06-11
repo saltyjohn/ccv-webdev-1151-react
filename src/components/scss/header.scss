@@ -51,10 +51,13 @@ header {
     }
   }
 
-  nav {
+  button {
+    // reset styling:
+    background: none;
+
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    // justify-content: space-between;
     align-items: center;
     height: 120px;
     width: 120px;
@@ -66,11 +69,9 @@ header {
       radius: 2rem;
     }
 
-    div {
-      background-color: $header-text-white;
-      height: 10px;
-      width: 80%;
-      border-radius: 10px;
+    span {
+      font-size: 3rem;
+      line-height: 30px;
     }
   }
 }
