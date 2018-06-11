@@ -14,7 +14,8 @@
   - Good article: https://hackernoon.com/the-100-correct-way-to-structure-a-react-app-or-why-theres-no-such-thing-3ede534ef1ed
 ## Webpack issues:
   - Implicit file resolve, babel-loader wouldn't recognize .jsx files,
-      Settings here worked: https://www.robinwieruch.de/minimal-react-webpack-babel-setup/
+  - Settings here worked:
+    = https://www.robinwieruch.de/minimal-react-webpack-babel-setup/
 
 
 # DAY 2:
@@ -26,10 +27,10 @@
   - prettier/eslint : https://www.youtube.com/watch?v=YIvjKId9m2c
     = $ install-peerdeps eslint-plugin-prettier
 
-  ## ========================!!! ISSUES !!! ========================
-  ### Prior-Knowledge:
-    = CRLF/LF End of line: https://github.com/jlengstorf/learn-rollup/issues/8
-    = allow both .js and .jsx: https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/jsx-filename-extension.md
+## ==========!!! ESLINT ISSUES !!!==========
+### Prior-Knowledge:
+  - CRLF/LF End of line: https://github.com/jlengstorf/learn-rollup/issues/8
+  - allow both .js and .jsx: https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/jsx-filename-extension.md
 
 ## React:
   - Need Closing Tag with self-contained elements: '/src/layouts/Layout.jsx'
@@ -69,5 +70,5 @@
   - prop-validation
 ## Show/hide Menu:
   - ideas from:
-  - https://blog.campvanilla.com/reactjs-dropdown-menus-b6e06ae3a8fe
+    = https://blog.campvanilla.com/reactjs-dropdown-menus-b6e06ae3a8fe
   - transition: https://css-tricks.com/almanac/properties/t/transition/
