@@ -13,21 +13,21 @@ const MenuNav = props => {
 
   return (
     <nav id="app-menu" className={menuClass}>
-      <button className="menu-button">Assignments</button>
-      <div />
-      <button className="menu-button">About</button>
-      <div />
-      <a href="https://github.com/saltyjohn">
-        <i className="fa fa-github text-white" />
-      </a>
-      <div />
-      <a href="https://www.linkedin.com/in/john-salzman/">
-        <i className="fa fa-linkedin text-white" />
-      </a>
-      <div />
-      <a href="https://twitter.com/sazlman">
-        <i className="fa fa-twitter text-white" />
-      </a>
+      <div>
+        <button className="menu-button">Assignments</button>
+        <button className="menu-button">About</button>
+      </div>
+      <div>
+        <a className="menu-button" href="https://github.com/saltyjohn">
+          <i className="fa fa-github text-white" />
+        </a>
+        <a className="menu-button" href="https://www.linkedin.com/in/john-salzman/">
+          <i className="fa fa-linkedin text-white" />
+        </a>
+        <a className="menu-button" href="https://twitter.com/sazlman">
+          <i className="fa fa-twitter text-white" />
+        </a>
+      </div>
     </nav>
   );
 };

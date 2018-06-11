@@ -1,14 +1,14 @@
 import React, { Component } from 'react';
 
 import Header from './Header/Header';
-import Menu from './Header/components/Header.Menu';
 
 class App extends Component {
   constructor() {
     super();
     this.state = {
-      menuFirstLoad: true,
-      menuOpen: false,
+      // TODO: Switch these
+      menuFirstLoad: false,
+      menuOpen: true,
     };
     this.handleClick = this.handleClick.bind(this);
   }

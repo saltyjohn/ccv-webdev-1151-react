@@ -8,12 +8,6 @@ header {
   background-color: $primary-background-color;
   color: $primary-color-black;
 
-  @media only screen
-  and (min-device-width: 320px)
-  and (max-device-width: 812px) {
-    flex-direction: row;
-  }
-
   .row {
     display: flex;
     flex-direction: row;
