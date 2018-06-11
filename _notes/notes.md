@@ -48,26 +48,26 @@
 
 
 # Day 3:
-  ## Header and Logo:
-    - Filled in layout.scss, mostly relearning variables, mixins, imported fonts, css shorthands
-    - am thinking about looking into autoprefixer when I settle the logo loading time
-    - dropped the size of Logo from ~700x900 (optimized SVG) to ~167x172 (png)
-      = increased load-time on 3g mid-tier by 300% (~7.2s to ~2.2s)
-  ## Webpack:
-    = need to go back and read about composition of webpack (getting started - webpack composition)
+## Header and Logo:
+  - Filled in layout.scss, mostly relearning variables, mixins, imported fonts, css shorthands
+  - am thinking about looking into autoprefixer when I settle the logo loading time
+  - dropped the size of Logo from ~700x900 (optimized SVG) to ~167x172 (png)
+    = increased load-time on 3g mid-tier by 300% (~7.2s to ~2.2s)
+## Webpack:
+  - need to go back and read about composition of webpack (getting started - webpack composition)
 
 # Day 4:
-  ## Eslint Prettier Config / Airbnb
-    = forgot to add prettier config to node_modules
-    = Airbnb/jsx-a11y asks the developer to insert alt attributes to images and add keyboard event listeners to click methods
-  ## Header:
-    = From comments:   JSX requires closing tag for self-contained elements, <img> => <img />, images loaded through webpack-dev-server must be root-relative because assets are not yet loaded in production-mode: file-loader: https://survivejs.com/webpack/loading/images/#setting-up-file-loader
-  ## MenuBurger:
-    = Had trouble getting state to change, but forgot to pass event handle prop to child component
-    = needed to update menu to <button> element, am trying text as replacement for styled <div>, thinking of using icon instead of text.
-      =+ https://icons8.com/line-awesome
-    = prop-validation
-  ## Show/hide Menu:
-    - ideas from:
-    - https://blog.campvanilla.com/reactjs-dropdown-menus-b6e06ae3a8fe
-    - transition: https://css-tricks.com/almanac/properties/t/transition/
+## Eslint Prettier Config / Airbnb
+  - forgot to add prettier config to node_modules
+  - Airbnb/jsx-a11y asks the developer to insert alt attributes to images and add keyboard event listeners to click methods
+## Header:
+  - From comments:   JSX requires closing tag for self-contained elements, <img> => <img />, images loaded through webpack-dev-server must be root-relative because assets are not yet loaded in production-mode: file-loader: https://survivejs.com/webpack/loading/images/#setting-up-file-loader
+## MenuBurger:
+  - Had trouble getting state to change, but forgot to pass event handle prop to child component
+  - needed to update menu to <button> element, am trying text as replacement for styled <div>, thinking of using icon instead of text.
+    = https://icons8.com/line-awesome
+  - prop-validation
+## Show/hide Menu:
+  - ideas from:
+  - https://blog.campvanilla.com/reactjs-dropdown-menus-b6e06ae3a8fe
+  - transition: https://css-tricks.com/almanac/properties/t/transition/
