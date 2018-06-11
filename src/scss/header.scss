@@ -1,6 +1,6 @@
 @import url(https://fonts.googleapis.com/css?family=EB+Garamond);
 
-@mixin font-set($size, $weight, $color: $header-white, $style: normal, $family: 'EB Garamond') {
+@mixin header-font-set($size, $weight, $color: $header-text-white, $style: normal, $family: 'EB Garamond') {
   font: {
     size: $size;
     weight: $weight;
@@ -10,35 +10,58 @@
   color: $color;
 }
 
-$header-white: #f5f5f5;
+$header-text-white: #f5f5f5;
+$header-text-black: #1b1b1b;
+$header-text-orange: #f7984e;
+$header-text-gray: #b6b6b6;
+$header-text-light-brown: #ab9d92;
 
 header {
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
   font-family: 'EB Garamond', serif;
   align-items: center;
   background-color: #0ed1d88c;
+  color: $header-text-black;
 
   #name-logo-container {
     display: flex;
     align-items: center;
     height: 250px;
 
-    #header-title { // "JRSweb" header
-      @include font-set(5rem, 400, #000, italic);
-      margin-left: 1.5rem;
-      text-decoration: underline;
-      text-decoration-color: $header-white;
-
-      span:first-child { // "JRS" only
-        @include font-set(5rem, 700)
-      }
-    }
-
     img {
       height: 80%;
       width: auto;
       padding: 1rem;
+    }
+
+    #header-title { // "JRSweb" header
+      @include header-font-set(5rem, 400, $header-text-black, italic);
+      margin-left: 1.5rem;
+      text-decoration: underline;
+      text-decoration-color: $header-text-white;
+
+      span:first-child { // "JRS" only
+        @include header-font-set(5rem, 700)
+      }
+      span:nth-child(2) { // 'w'
+        color: $header-text-gray;
+      }
+      span:nth-child(3) { // 'e'
+        color: $header-text-orange;
+      } // 'b' is header primary black
+    }
+  }
+  nav {
+    height: 120px;
+    width: 120px;
+    margin-right: 1rem;
+    border: 3px solid black;
+    #menu-icon {
+      > div {
+
+      }
     }
   }
 }

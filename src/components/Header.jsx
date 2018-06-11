@@ -16,15 +16,18 @@ const Layout = () => (
       <div id="name-logo-container">
         <img src={logo} />
         <h1 id="header-title">
-          <span>
-            JRS
-          </span>
-          <span>
-            web
-          </span>
+          <span>JRS</span>
+          <span>w</span>
+          <span>e</span>
+          <span>b</span>
         </h1>
       </div>
       <nav>
+        <div id="menu-icon">
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
       </nav>
     </header>
   </div>
