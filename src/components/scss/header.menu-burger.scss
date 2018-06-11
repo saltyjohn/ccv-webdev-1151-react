@@ -1,24 +1,19 @@
 @import 'master';
 
 #menu-burger {
-  // reset styling:
-  background: none;
-  outline: none;
-
-  // set styling
   font-size: 5rem;
   margin-right: 2rem;
   border: {
     width: 10px;
     style: solid;
-    color: $primary-text-white;
+    color: $primary-color-white;
     radius: 2rem;
   }
 }
 
 .text-orange {
-  color: $primary-text-orange;
+  color: $primary-color-orange;
 }
 .text-white {
-  color: $primary-text-white;
+  color: $primary-color-white;
 }

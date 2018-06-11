@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 
 import Header from './Header';
-import Nav from './App.Nav';
+import Menu from './App.Menu';
 
 class App extends Component {
   constructor() {
@@ -29,7 +29,7 @@ class App extends Component {
     return (
       <div>
         <Header menuOpen={this.state.menuOpen} onClick={this.handleClick} />
-        <Nav menuOpen={this.state.menuOpen} />
+        <Menu menuOpen={this.state.menuOpen} />
       </div>
     );
   }

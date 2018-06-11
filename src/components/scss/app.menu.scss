@@ -6,15 +6,6 @@
   background-color: $primary-background-color;
 
   .nav-button {
-    color: $primary-text-orange;
-    background: none;
-    outline: none;
-    border: none;
+    @include font-set(3rem, 600, $primary-color-white);
   }
-}
-#menu-nav.show {
-
-}
-#menu-nav.hide {
-
 }

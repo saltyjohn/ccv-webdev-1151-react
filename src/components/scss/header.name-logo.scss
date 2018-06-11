@@ -12,16 +12,16 @@
   }
 
   #header-title { // "JRSweb" header
-    @include header-font-set(5.5rem, 400, $primary-text-black, italic);
+    @include font-set(5.5rem, 400, $primary-color-black, italic);
     margin-left: 1.5rem;
     text-decoration: underline;
-    text-decoration-color: $primary-text-white;
+    text-decoration-color: $primary-color-white;
 
-    span:first-child { // "JRS" only
-      @include header-font-set(5.5rem, 700)
+    span:first-child { // 'JRS'
+      @include font-set(5.5rem, 700)
     }
     span:nth-child(3) { // 'e'
-      color: $primary-text-orange;
+      color: $primary-color-orange;
     }
   }
 }

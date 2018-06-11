@@ -1,5 +1,10 @@
-// Main CSS Rules for project
-
+// Resets
 body {
   margin: 0;
+}
+button {
+  background: none;
+  outline: none;
+  border: none;
+  padding: 0;
 }
