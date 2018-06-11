@@ -16,7 +16,7 @@ module.exports = {
         use: [
           {
             loader: 'html-loader',
-            options: { minimize: true, },
+            options: { minimize: true },
           },
         ],
       },
@@ -35,16 +35,17 @@ module.exports = {
       {
         test: /\.(jpg|png)$/,
         use: {
-          loader: "file-loader",
+          loader: 'file-loader',
           options: {
-            name: "[path][name].[hash].[ext]",
+            name: '[name].[hash].[ext]',
+            outputPath: 'images/',
           },
         },
-      }
+      },
     ],
   },
   resolve: {
-    extensions: ['*', '.js', '.jsx',],
+    extensions: ['*', '.js', '.jsx'],
   },
   plugins: [
     new HtmlWebPackPlugin({

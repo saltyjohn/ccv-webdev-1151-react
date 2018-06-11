@@ -1,7 +1,7 @@
 import React from 'react';
 
 import './header.name-logo.scss';
-import logo from '../images/logo.png';
+import logo from '../../../images/logo.png';
 
 const NameLogo = () => (
   <div id="name-logo-container">
