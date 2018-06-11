@@ -14,8 +14,20 @@ const MenuNav = props => {
   return (
     <nav id="app-menu" className={menuClass}>
       <button className="menu-button">Assignments</button>
-      {/* <button className="menu-button">Contact</button> */}
+      <hr />
       <button className="menu-button">About</button>
+      <hr />
+      <a href="https://github.com/saltyjohn">
+        <i className="fa fa-github text-white" />
+      </a>
+      <hr />
+      <a href="https://www.linkedin.com/in/john-salzman/">
+        <i className="fa fa-linkedin text-white" />
+      </a>
+      <hr />
+      <a href="https://twitter.com/sazlman">
+        <i className="fa fa-twitter text-white" />
+      </a>
     </nav>
   );
 };

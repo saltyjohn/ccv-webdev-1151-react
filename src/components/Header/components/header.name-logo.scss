@@ -5,10 +5,18 @@
   align-items: center;
   height: 250px;
 
+  @media screen and (max-width: 720px) {
+    height: 200px;
+  }
+
   img {
     height: 80%;
     width: auto;
     padding: 1rem;
+
+    @media screen and (max-width: 720px) {
+      height: 80%;
+    }
   }
 
   #header-title { // "JRSweb" header
@@ -21,7 +29,7 @@
       @include font-set(5.5rem, 700)
     }
     span:nth-child(3) { // 'e'
-      color: $primary-color-orange;
+      color: $primary-color-blue;
     }
   }
 }

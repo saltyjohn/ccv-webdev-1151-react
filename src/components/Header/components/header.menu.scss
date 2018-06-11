@@ -2,13 +2,31 @@
 
 #app-menu {
   display: flex;
-  justify-content: space-around;
-  background-color: $primary-background-color;
-  text-decoration: underline overline $primary-color-orange;
+  justify-content: space-evenly;
+  background-color: $secondary-background-color;
+  align-content: center;
+  text-align: center;
+  // text-decoration: underline overline $primary-color-orange;
   visibility: hidden;
 
   .menu-button {
     @include font-set(4rem, 600, $primary-color-white);
+  }
+
+  i {
+    font-size: 5rem;
+  }
+
+  @media screen and (max-width: 720px) {
+    flex-wrap: wrap;
+    .menu-button {
+      @include font-set(3rem, 600, $primary-color-white);
+    }
+
+    i {
+      font-size: 3rem;
+      margin: 20% 0;
+    }
   }
 }
 

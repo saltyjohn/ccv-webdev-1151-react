@@ -8,5 +8,14 @@ header {
   align-items: center;
   background-color: $primary-background-color;
   color: $primary-color-black;
+  @media screen and (max-width: 720px) {
+    flex-direction: column;
+  }
 }
 
+.text-orange {
+  color: $primary-color-orange;
+}
+.text-white {
+  color: $primary-color-white;
+}

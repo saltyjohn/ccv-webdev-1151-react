@@ -32,11 +32,10 @@ class App extends Component {
     return (
       <div id="jrs-web">
         <Header menuOpen={openMenu} onClick={this.handleClick} />
-        {/*
-          showHide Prop ternary for quick fix of
-          accidental 'hide' animation on first load
-        */}
         <Menu showHide={this.state.menuFirstLoad ? '' : openMenu} />
+        <article>
+          <h1>Hello, world!</h1>
+        </article>
       </div>
     );
   }
