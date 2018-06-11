@@ -67,6 +67,7 @@
   - needed to update menu to <button> element, am trying text as replacement for styled <div>, thinking of using icon instead of text.
     = https://icons8.com/line-awesome
   - prop-validation
+    = https://reactjs.org/docs/typechecking-with-proptypes.html
 ## Show/hide Menu:
   - ideas from:
     = https://blog.campvanilla.com/reactjs-dropdown-menus-b6e06ae3a8fe
