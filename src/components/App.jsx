@@ -6,9 +6,8 @@ class App extends Component {
   constructor() {
     super();
     this.state = {
-      // TODO: Switch these
-      menuFirstLoad: false,
-      menuOpen: true,
+      menuFirstLoad: true,
+      menuOpen: false,
     };
     this.handleClick = this.handleClick.bind(this);
   }

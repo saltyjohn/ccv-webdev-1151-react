@@ -1,6 +1,6 @@
 @import '../../scss/master';
 
-$menu-height: 40px;
+$menu-height: 42px;
 
 #app-menu {
   display: flex;
@@ -10,9 +10,7 @@ $menu-height: 40px;
   line-height: 0;
   height: 0;
 
-  &.hide {
-    animation: fade-out 1.3s;
-  }
+  &.hide { animation: fade-out 1.3s; }
   &.show{
     height: $menu-height;
     line-height: $menu-height;
@@ -20,29 +18,18 @@ $menu-height: 40px;
     animation: fade-in 1.3s;
   }
 
-  .menu-button { @include font-set(2rem, 600, $primary-color-white); }
-
-  div {
-    align-items: center;
-    button {
-      padding: 0px 15px;
-      border-right: 4px solid $primary-color-white;
-      border-left: 4px solid $primary-color-white;
-      border-radius: 1rem;
-      &:hover {
-        cursor: pointer;
-      }
-    }
-    a {
-      padding: 0px 15px;
-      border-right: 4px solid $primary-color-white;
-      border-left: 4px solid $primary-color-white;
-      border-radius: 1rem;
+  .menu-button {
+    @include font-set(2rem, 600, $primary-color-white);
+    margin: 0px 10px;
+    padding: 0px 10px;
+    border-right: 4px solid $primary-color-white;
+    border-left: 4px solid $primary-color-white;
+    border-radius: 1rem;
+    &:hover {
+      cursor: pointer;
     }
   }
-
 }
-
 
 @keyframes fade-in {
   0% {
@@ -70,4 +57,3 @@ $menu-height: 40px;
     opacity: 0;
   }
 }
-
