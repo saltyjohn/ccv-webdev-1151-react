@@ -2,14 +2,23 @@
 
 header {
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+  flex-direction: column;
   font-family: 'EB Garamond', serif;
-  align-items: center;
+  padding-bottom: -60px;
   background-color: $primary-background-color;
   color: $primary-color-black;
-  @media screen and (max-width: 720px) {
-    flex-direction: column;
+
+  @media only screen
+  and (min-device-width: 320px)
+  and (max-device-width: 812px) {
+    flex-direction: row;
+  }
+
+  .row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
   }
 }
 

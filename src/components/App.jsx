@@ -31,8 +31,12 @@ class App extends Component {
     const openMenu = this.state.menuOpen;
     return (
       <div id="jrs-web">
-        <Header menuOpen={openMenu} onClick={this.handleClick} />
-        <Menu showHide={this.state.menuFirstLoad ? '' : openMenu} />
+        <Header
+          menuOpen={openMenu}
+          onClick={this.handleClick}
+          showHide={this.state.menuFirstLoad ? '' : openMenu}
+        />
+        {/* <Menu showHide={this.state.menuFirstLoad ? '' : openMenu} /> */}
         <article>
           <h1>Hello, world!</h1>
         </article>

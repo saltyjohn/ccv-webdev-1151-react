@@ -1,21 +1,21 @@
 @import '../../scss/master';
 
 #menu-burger {
-  font-size: 5rem;
+  font-size: 3rem;
   margin-right: 3rem;
   width: 120px;
-  height: 120px;
+  height: 60px;
   border: {
     width: 10px;
     style: solid;
     color: $primary-color-white;
     radius: 2rem;
+    top: 0px;
   }
 
-  @media only screen and (max-width: 720px) {
-    font-size: 3rem;
+  @media only screen
+  and (min-device-width: 320px)
+  and (max-device-width: 812px) {
     margin: 0;
-    height: 60px;
-    border-bottom: 0px;
   }
 }

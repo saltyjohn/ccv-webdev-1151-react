@@ -3,30 +3,33 @@
 #name-logo-container {
   display: flex;
   align-items: center;
-  height: 250px;
-
-  @media screen and (max-width: 720px) {
-    height: 200px;
+  // height: 20vh;
+  @media only screen
+    and (min-device-width: 320px)
+    and (max-device-width: 812px) {
+    // height: 30%;
   }
 
-  img {
-    height: 80%;
+  #header-logo {
+    height: 70%;
     width: auto;
     padding: 1rem;
 
-    @media screen and (max-width: 720px) {
-      height: 80%;
-    }
+    @media only screen
+    and (min-device-width: 320px)
+    and (max-device-width: 812px) {
+    height: 80%;
+  }
   }
 
   #header-title { // "JRSweb" header
-    @include font-set(5.5rem, 400, $primary-color-black, italic);
+    @include font-set(5rem, 400, $primary-color-black, italic);
     margin-left: 1.5rem;
     text-decoration: underline;
     text-decoration-color: $primary-color-white;
 
     span:first-child { // 'JRS'
-      @include font-set(5.5rem, 700)
+      @include font-set(5rem, 700)
     }
     span:nth-child(3) { // 'e'
       color: $primary-color-blue;
