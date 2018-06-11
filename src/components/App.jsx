@@ -29,7 +29,7 @@ class App extends Component {
     return (
       <div>
         <Header menuOpen={this.state.menuOpen} onClick={this.handleClick} />
-        <Nav />
+        <Nav menuOpen={this.state.menuOpen} />
       </div>
     );
   }

@@ -4,10 +4,10 @@ import PropTypes from 'prop-types';
 import './scss/header.menu-burger.scss';
 
 const MenuBurger = props => {
-  const currentIcon = props.open ? `fa fa-close` : `fa fa-navicon`;
+  const componentClasses = props.open ? `fa fa-close text-orange` : `fa fa-navicon text-white`;
   return (
     <button id="menu-burger" onClick={props.onClick}>
-      <i id="menu-button" className={currentIcon} />
+      <i id="menu-button" className={componentClasses} />
     </button>
   );
 };
