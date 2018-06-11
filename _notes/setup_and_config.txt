@@ -64,5 +64,6 @@ Day 4:
     = From comments:   JSX requires closing tag for self-contained elements, <img> => <img />, images loaded through webpack-dev-server must be root-relative because assets are not yet loaded in production-mode: file-loader: https://survivejs.com/webpack/loading/images/#setting-up-file-loader
   - MenuBurger:
     = Had trouble getting state to change, but forgot to pass event handle prop to child component
-    = needed to update menu to <button> element, thinking of using icon instead of text.
+    = needed to update menu to <button> element, am trying text as replacement for styled <div>, thinking of using icon instead of text.
+      =+ https://icons8.com/line-awesome
     = prop-validation

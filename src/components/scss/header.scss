@@ -54,24 +54,16 @@ header {
   button {
     // reset styling:
     background: none;
-
-    display: flex;
-    flex-direction: column;
-    // justify-content: space-between;
-    align-items: center;
-    height: 120px;
-    width: 120px;
-    margin-right: 1rem;
+    color: $header-text-white;
+    outline: none;
+    font-size: 5rem;
+    margin-right: 2rem;
     border: {
-      width: 5px;
+      width: 10px;
       style: solid;
       color: $header-text-white;
       radius: 2rem;
     }
 
-    span {
-      font-size: 3rem;
-      line-height: 30px;
-    }
   }
 }
