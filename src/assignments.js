@@ -57,22 +57,22 @@ const assignments = {
         title: 'Highlighter',
         before: {
           src: 'http://jrs12220.classweb.ccv.edu/WebDev/routes/assignment02/before02.html',
-          alt: 'No content, before',
+          alt: 'Highlight, before',
         },
         after: {
           src: 'http://jrs12220.classweb.ccv.edu/WebDev/routes/assignment02/after02.html',
-          alt: 'Content, after',
+          alt: 'Highlighter, after',
         },
       },
       '3': {
         title: 'JRSweb Article',
         before: {
           src: 'http://jrs12220.classweb.ccv.edu/WebDev/routes/assignment02/before02.html',
-          alt: 'Blue Flax, before',
+          alt: 'JRSweb before, before',
         },
         after: {
           src: 'http://jrs12220.classweb.ccv.edu/WebDev/routes/assignment02/after02.html',
-          alt: 'Blue Flax, after',
+          alt: 'JRSweb, after',
         },
       },
     },
