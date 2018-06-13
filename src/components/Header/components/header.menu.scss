@@ -1,14 +1,29 @@
 @import '../../scss/master';
 
 $menu-height: 42px;
+$menu-height-mobile: 2 * $menu-height;
 
 #app-menu {
   display: flex;
+  flex: 0 0 100%;
   justify-content: space-between;
   background-color: $secondary-background-color;
   visibility: hidden;
   line-height: 0;
   height: 0;
+
+  @media screen and (max-width: 720px) {
+    flex-direction: column;
+    // align-items: center;
+    div {
+      display: flex;
+      justify-content: space-evenly;
+      // flex-wrap: wrap;
+      width: 100%;
+      height: $menu-height;
+      line-height: $menu-height;
+    }
+  }
 
   &.hide { animation: fade-out 1.3s; }
   &.show{
@@ -16,6 +31,11 @@ $menu-height: 42px;
     line-height: $menu-height;
     visibility: visible;
     animation: fade-in 1.3s;
+    @media screen and (max-width: 720px) {
+      height: $menu-height-mobile;
+      line-height: $menu-height-mobile;
+      margin: 0;
+    }
   }
 
   .menu-button {
@@ -55,5 +75,34 @@ $menu-height: 42px;
   100% {
     height: 0;
     opacity: 0;
+  }
+}
+
+@media screen and (max-width: 720px) {
+  @keyframes fade-in {
+    0% {
+      font-size: .1rem;
+      line-height: 0;
+      height: 0;
+      opacity: 0;
+    }
+    100% {
+      height: $menu-height-mobile;
+      line-height: $menu-height-mobile;
+      opacity: 1;
+    }
+  }
+
+  @keyframes fade-out {
+    0% {
+      visibility: visible;
+      height: $menu-height-mobile;
+      line-height: $menu-height-mobile;
+      opacity: 1;
+    }
+    100% {
+      height: 0;
+      opacity: 0;
+    }
   }
 }

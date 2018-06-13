@@ -12,4 +12,7 @@
     radius: 2rem;
     top: 0px;
   }
+  @media screen and (max-width: 720px) {
+    margin: 0;
+  }
 }
