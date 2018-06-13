@@ -1,4 +1,4 @@
-@import '../scss/master';
+@import '../master';
 
 .content-wrapper {
   max-width: 720px;
@@ -12,12 +12,9 @@
   }
 
   h1 {
-    font-size: 2rem;
     text-align: center;
-  }
-
-  h2 {
-    text-align: center;
+    font-size: 2.4rem;
+    margin: 0;
   }
 
   p {
@@ -26,5 +23,62 @@
 
   .multi-line-paragraph {
     text-indent: 5%;
+  }
+
+  // Arrows
+  #next-prev {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    // Assignment Number
+    h2 {
+      background-color: $secondary-background-color;
+      color: $primary-color-black;
+      text-align:center;
+      border-radius: 2rem;
+      font-size: 2rem;
+      padding: 10px;
+      flex-grow: 2;
+      // overflow: auto;
+    }
+
+    button {
+      background-color: $primary-background-color;
+      border-radius: 1.5rem;
+      flex-grow: 3;
+      padding: 5px 0;
+      color: #919191;
+      font-size: 1.6rem;
+
+      &:hover { cursor: pointer; }
+
+      span {
+        text-decoration: underline;
+      }
+
+      i { font-weight: 600; }
+    }
+
+    .active {
+      color: $primary-color-white;
+      border: 2px solid $primary-color-blue;
+      font-weight: 700;
+    }
+  }
+
+
+  .ba-container {
+    h3 {
+      font-style: italic;
+      text-align: center;
+      font-size: 1.8rem;
+    }
+    div {
+      display: flex;
+      justify-content: space-evenly;
+      margin: 0 20%;
+      font-size: 1.5rem;
+    }
   }
 }

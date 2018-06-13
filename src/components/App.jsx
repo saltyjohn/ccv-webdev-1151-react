@@ -7,6 +7,7 @@ class App extends Component {
   constructor() {
     super();
     this.state = {
+      // currentView: 'assignments_page',
       currentView: 'home_page',
     };
     this.changeView = this.changeView.bind(this);

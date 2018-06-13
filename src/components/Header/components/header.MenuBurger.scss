@@ -1,4 +1,4 @@
-@import '../../scss/master';
+@import '../../master';
 
 
 #menu-burger {
@@ -23,5 +23,6 @@
     width: 80px;
     height: 40px;
     font-size: 2rem;
+    border-width: 6px;
   }
 }
