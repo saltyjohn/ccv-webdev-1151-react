@@ -13,6 +13,11 @@
     radius: 2rem;
     top: 0px;
   }
+
+  &:hover {
+    cursor: pointer;
+  }
+
   @media screen and (max-width: 720px) {
     margin: 0;
     width: 80px;

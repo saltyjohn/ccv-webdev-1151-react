@@ -14,11 +14,7 @@ class App extends Component {
 
   changeView(e) {
     let targetID = e.target.id;
-    if (
-      // handles nameLogo.jsx container id return to home screen on Enter or click
-      e.currentTarget.id === 'name-logo-container' &&
-      (e.key === 'Enter' || e.type === 'click')
-    ) {
+    if (e.currentTarget.id === 'name-logo-container' && (e.key === 'Enter' || e.type === 'click')) {
       targetID = 'home_page';
     }
     this.setState({

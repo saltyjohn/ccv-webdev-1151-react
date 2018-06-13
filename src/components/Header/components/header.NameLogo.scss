@@ -13,6 +13,13 @@
     }
   }
 
+  &:focus {
+    outline: none;
+  }
+  &:hover {
+    cursor: pointer;
+  }
+
   #header-title { // "JRSweb" full header
     @include font-set(5rem, 400, $primary-color-black, italic);
     margin-left: 1.5rem;

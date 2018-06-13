@@ -7,7 +7,7 @@ const MenuBurger = props => {
   const componentClasses = props.open ? `fa fa-close text-orange` : `fa fa-navicon text-white`;
   return (
     <button id="menu-burger" onClick={props.onClick}>
-      <i id="menu-button" className={componentClasses} />
+      <i id="menu-burger-icon" className={componentClasses} />
     </button>
   );
 };

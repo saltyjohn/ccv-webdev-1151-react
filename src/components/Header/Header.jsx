@@ -19,7 +19,7 @@ class Header extends Component {
   handleClick(e) {
     const targetID = e.target.id;
     switch (targetID) {
-      case 'menu-button':
+      case 'menu-burger-icon':
         this.setState({
           menuFirstLoad: false,
           menuOpen: !this.state.menuOpen,

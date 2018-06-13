@@ -14,6 +14,9 @@ const MenuNav = props => {
   return (
     <nav id="app-menu" className={menuClass}>
       <div>
+        <button id="home_page" className="menu-button" onClick={props.handleView}>
+          Home
+        </button>
         <button id="assignments_page" className="menu-button" onClick={props.handleView}>
           Assignments
         </button>
@@ -22,13 +25,28 @@ const MenuNav = props => {
         </button>
       </div>
       <div>
-        <a className="menu-button" href="https://github.com/saltyjohn">
+        <a
+          className="menu-button"
+          href="https://github.com/saltyjohn"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           <i className="fa fa-github text-white" />
         </a>
-        <a className="menu-button" href="https://www.linkedin.com/in/john-salzman/">
+        <a
+          className="menu-button"
+          href="https://www.linkedin.com/in/john-salzman/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           <i className="fa fa-linkedin text-white" />
         </a>
-        <a className="menu-button" href="https://twitter.com/sazlman">
+        <a
+          className="menu-button"
+          href="https://twitter.com/sazlman"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           <i className="fa fa-twitter text-white" />
         </a>
       </div>
