@@ -17,14 +17,14 @@ $menu-height-mobile: 2 * $menu-height;
     div {
       display: flex;
       justify-content: space-evenly;
-      width: 100%;
       height: $menu-height-mobile;
       line-height: $menu-height-mobile;
-      a {
-        display: flex;
-        align-items: center;
-      }
     }
+  }
+
+  a {
+    display: flex;
+    align-items: center;
   }
 
   &.hide { animation: fade-out 1.3s; }
@@ -33,10 +33,11 @@ $menu-height-mobile: 2 * $menu-height;
     line-height: $menu-height;
     visibility: visible;
     animation: fade-in 1.3s;
+
     @media screen and (max-width: 720px) {
       height: $menu-height-mobile;
       line-height: $menu-height-mobile;
-      margin: 0;
+      padding: 5px 0;
     }
   }
 
@@ -49,6 +50,9 @@ $menu-height-mobile: 2 * $menu-height;
     border-radius: 1rem;
     &:hover {
       cursor: pointer;
+    }
+    @media screen and (max-wdith: 720px) {
+      font-size: 1.5rem;
     }
   }
 }

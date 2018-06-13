@@ -18,7 +18,7 @@ const MenuNav = props => {
           Home
         </button>
         <button id="assignments_page" className="menu-button" onClick={props.handleView}>
-          Assignments
+          HW
         </button>
         <button id="about_page" className="menu-button" onClick={props.handleView}>
           About
