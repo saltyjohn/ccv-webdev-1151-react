@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-// import PropTypes from 'prop-types';
+import PropTypes from 'prop-types';
 
 import NameLogo from './components/Header.NameLogo';
 import MenuBurger from './components/Header.MenuBurger';
@@ -37,10 +37,17 @@ class Header extends Component {
           <NameLogo />
           <MenuBurger open={this.state.menuOpen} onClick={this.handleClick} />
         </div>
-        <Menu showHide={this.state.menuFirstLoad ? '' : this.state.menuOpen} />
+        <Menu
+          handleView={this.props.handleView}
+          showHide={this.state.menuFirstLoad ? '' : this.state.menuOpen}
+        />
       </header>
     );
   }
 }
+
+Header.propTypes = {
+  handleView: PropTypes.func.isRequired,
+};
 
 export default Header;

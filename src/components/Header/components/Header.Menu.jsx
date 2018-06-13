@@ -14,8 +14,12 @@ const MenuNav = props => {
   return (
     <nav id="app-menu" className={menuClass}>
       <div>
-        <button className="menu-button">Assignments</button>
-        <button className="menu-button">About</button>
+        <button id="assignments-page-link" className="menu-button" onClick={props.handleView}>
+          Assignments
+        </button>
+        <button id="about-page-link" className="menu-button">
+          About
+        </button>
       </div>
       <div>
         <a className="menu-button" href="https://github.com/saltyjohn">

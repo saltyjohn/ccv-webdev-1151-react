@@ -1,11 +1,11 @@
 import React from 'react';
 // import PropTypes from 'prop-types';
 
-const ContentWrapper = () => (
+const Home = () => (
   <div id="content-wrapper">
-    <article />
+    <article>Hello World!</article>
   </div>
 );
-ContentWrapper.propTypes = {};
+Home.propTypes = {};
 
-export default ContentWrapper;
+export default Home;
