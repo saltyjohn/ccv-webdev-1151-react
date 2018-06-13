@@ -18,8 +18,12 @@ $menu-height-mobile: 2 * $menu-height;
       display: flex;
       justify-content: space-evenly;
       width: 100%;
-      height: $menu-height;
-      line-height: $menu-height;
+      height: $menu-height-mobile;
+      line-height: $menu-height-mobile;
+      a {
+        display: flex;
+        align-items: center;
+      }
     }
   }
 

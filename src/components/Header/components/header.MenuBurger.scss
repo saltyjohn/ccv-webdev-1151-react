@@ -1,5 +1,6 @@
 @import '../../scss/master';
 
+
 #menu-burger {
   font-size: 3rem;
   margin-right: 3rem;
@@ -14,5 +15,8 @@
   }
   @media screen and (max-width: 720px) {
     margin: 0;
+    width: 80px;
+    height: 40px;
+    font-size: 2rem;
   }
 }
