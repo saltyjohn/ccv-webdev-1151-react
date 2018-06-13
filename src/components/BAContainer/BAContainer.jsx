@@ -13,6 +13,7 @@ const AssignContainer = props => (
         After
       </a>
     </div>
+    <hr />
   </div>
 );
 

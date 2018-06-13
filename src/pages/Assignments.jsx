@@ -9,6 +9,7 @@ class Assignments extends Component {
     super();
     this.state = {
       currentAssign: 1,
+      completedAssignments: Object.keys(assignments).length,
     };
     this.handleClick = this.handleClick.bind(this);
   }
@@ -18,7 +19,10 @@ class Assignments extends Component {
     let assignChange = 0;
     if (targetID === 'prev-btn' && this.state.currentAssign > 1) {
       assignChange = -1;
-    } else if (targetID === 'next-btn' && this.state.currentAssign < 14) {
+    } else if (
+      targetID === 'next-btn' &&
+      this.state.currentAssign < this.state.completedAssignments
+    ) {
       assignChange = 1;
     }
     this.setState({
@@ -48,7 +52,7 @@ class Assignments extends Component {
 
           <button
             id="next-btn"
-            className={this.state.currentAssign < 14 ? 'active' : ''}
+            className={this.state.currentAssign < this.state.completedAssignments ? 'active' : ''}
             onClick={this.handleClick}
           >
             <span>Next</span>
