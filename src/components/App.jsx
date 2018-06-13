@@ -7,15 +7,23 @@ class App extends Component {
   constructor() {
     super();
     this.state = {
-      currentView: 'home',
+      currentView: 'home_page',
     };
     this.changeView = this.changeView.bind(this);
-    // this.handleClick = this.handleClick.bind(this);
   }
 
   changeView(e) {
-    console.log(e.target);
-    console.log(this);
+    let targetID = e.target.id;
+    if (
+      // handles nameLogo.jsx container id return to home screen on Enter or click
+      e.currentTarget.id === 'name-logo-container' &&
+      (e.key === 'Enter' || e.type === 'click')
+    ) {
+      targetID = 'home_page';
+    }
+    this.setState({
+      currentView: targetID,
+    });
   }
 
   render() {

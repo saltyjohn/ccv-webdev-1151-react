@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-import './header.Menu.scss';
+import './header.menu.scss';
 
 const MenuNav = props => {
   let menuClass;
@@ -14,10 +14,10 @@ const MenuNav = props => {
   return (
     <nav id="app-menu" className={menuClass}>
       <div>
-        <button id="assignments-page-link" className="menu-button" onClick={props.handleView}>
+        <button id="assignments_page" className="menu-button" onClick={props.handleView}>
           Assignments
         </button>
-        <button id="about-page-link" className="menu-button">
+        <button id="about_page" className="menu-button" onClick={props.handleView}>
           About
         </button>
       </div>
@@ -38,6 +38,7 @@ const MenuNav = props => {
 
 MenuNav.propTypes = {
   showHide: PropTypes.oneOfType([PropTypes.bool, PropTypes.string]).isRequired,
+  handleView: PropTypes.func.isRequired,
 };
 
 export default MenuNav;

@@ -34,7 +34,7 @@ class Header extends Component {
     return (
       <header role="banner">
         <div className="menu-row">
-          <NameLogo />
+          <NameLogo handleView={this.props.handleView} />
           <MenuBurger open={this.state.menuOpen} onClick={this.handleClick} />
         </div>
         <Menu
