@@ -7,8 +7,8 @@ import Menu from './components/Header.Menu';
 import './header.scss';
 
 const Header = props => (
-  <header>
-    <div className="row">
+  <header role="banner">
+    <div className="menu-row">
       <NameLogo />
       <MenuBurger open={props.menuOpen} onClick={props.onClick} />
     </div>

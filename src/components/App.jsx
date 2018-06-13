@@ -35,8 +35,8 @@ class App extends Component {
           onClick={this.handleClick}
           showHide={this.state.menuFirstLoad ? '' : openMenu}
         />
-        {/* <Menu showHide={this.state.menuFirstLoad ? '' : openMenu} /> */}
         <article>
+          {/* Placeholder for conten */}
           <h1>Hello, world!</h1>
         </article>
       </div>
