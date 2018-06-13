@@ -10,10 +10,11 @@ const Home = () => (
       Course 1151.
     </p>
     <p className="multi-line-paragraph">
-      This page is made with ReactJS for the UI, Sassy CSS for styling, and bundled with Webpack.
+      This page is made with ReactJS for the UI, Sassy CSS for styling, and bundled using Webpack.
     </p>
   </article>
 );
-Home.propTypes = {};
+
+// Home.propTypes = {};
 
 export default Home;

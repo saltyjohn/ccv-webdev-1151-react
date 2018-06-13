@@ -12,11 +12,18 @@ $menu-height-mobile: 2 * $menu-height;
   line-height: 0;
   height: 0;
 
+  div {
+    display: flex;
+    flex-direction: row;
+    // width: 50%;
+  }
+
   @media screen and (max-width: 720px) {
     flex-direction: column;
     div {
       display: flex;
       justify-content: space-evenly;
+      width: 100%;
       height: $menu-height-mobile;
       line-height: $menu-height-mobile;
     }

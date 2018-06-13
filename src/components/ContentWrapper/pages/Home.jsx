@@ -3,11 +3,11 @@ import React from 'react';
 
 const Home = () => (
   <article>
-    <h1>
-      Welcome to my <br /> React Web Page!
-    </h1>
+    <h1>Home</h1>
+    <h2>Welcome to my React Web Page!</h2>
   </article>
 );
-Home.propTypes = {};
+
+// Home.propTypes = {};
 
 export default Home;
