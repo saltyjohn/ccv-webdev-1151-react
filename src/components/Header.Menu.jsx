@@ -1,8 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-import './header.menu.scss';
-
 const MenuNav = props => {
   let menuClass;
   if (props.showHide === '') {

@@ -1,0 +1,229 @@
+@import './master';
+
+
+// =============================================================================
+// ====  HEADER  ===============================================================
+// =============================================================================
+header {
+  display: flex;
+  flex-direction: column;
+  font-family: 'EB Garamond', serif;
+  background-color: $primary-background-color;
+  color: $primary-color-black;
+
+  .menu-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    @media screen and (max-width: 720px) {
+      flex-direction: column;
+      padding-bottom: 10px;
+    }
+  }
+}
+
+// For burger-menu and menu icons
+.text-orange {
+  color: $primary-color-orange;
+}
+.text-white {
+  color: $primary-color-white;
+}
+
+// =============================================================================
+// ====  MENU  =================================================================
+// =============================================================================
+
+$menu-height: 42px;
+$menu-height-mobile: 2 * $menu-height;
+
+#app-menu {
+  display: flex;
+  flex: 0 0 100%;
+  justify-content: space-between;
+  background-color: $secondary-background-color;
+  visibility: hidden;
+  line-height: 0;
+  height: 0;
+
+  div {
+    display: flex;
+    flex-direction: row;
+    // width: 50%;
+  }
+
+  @media screen and (max-width: 720px) {
+    flex-direction: column;
+    div {
+      display: flex;
+      justify-content: space-evenly;
+      width: 100%;
+      height: $menu-height-mobile;
+      line-height: $menu-height-mobile;
+    }
+  }
+
+  a {
+    display: flex;
+    align-items: center;
+  }
+
+  &.hide { animation: fade-out 1.3s; }
+  &.show{
+    height: $menu-height;
+    line-height: $menu-height;
+    visibility: visible;
+    animation: fade-in 1.3s;
+
+    @media screen and (max-width: 720px) {
+      height: $menu-height-mobile;
+      line-height: $menu-height-mobile;
+      padding: 5px 0;
+    }
+  }
+
+  .menu-button {
+    @include font-set(2rem, 600, $primary-color-white);
+    margin: 0px 10px;
+    padding: 0px 10px;
+    border-right: 4px solid $primary-color-white;
+    border-left: 4px solid $primary-color-white;
+    border-radius: 1rem;
+    &:hover {
+      cursor: pointer;
+    }
+    @media screen and (max-wdith: 720px) {
+      font-size: 1.5rem;
+    }
+  }
+}
+
+@keyframes fade-in {
+  0% {
+    font-size: .1rem;
+    line-height: 0;
+    height: 0;
+    opacity: 0;
+  }
+  100% {
+    height: $menu-height;
+    line-height: $menu-height;
+    opacity: 1;
+  }
+}
+
+@keyframes fade-out {
+  0% {
+    visibility: visible;
+    height: $menu-height;
+    line-height: $menu-height;
+    opacity: 1;
+  }
+  100% {
+    height: 0;
+    opacity: 0;
+  }
+}
+
+@media screen and (max-width: 720px) {
+  @keyframes fade-in {
+    0% {
+      font-size: .1rem;
+      line-height: 0;
+      height: 0;
+      opacity: 0;
+    }
+    100% {
+      height: $menu-height-mobile;
+      line-height: $menu-height-mobile;
+      opacity: 1;
+    }
+  }
+
+  @keyframes fade-out {
+    0% {
+      visibility: visible;
+      height: $menu-height-mobile;
+      line-height: $menu-height-mobile;
+      opacity: 1;
+    }
+    100% {
+      height: 0;
+      opacity: 0;
+    }
+  }
+}
+
+// =============================================================================
+// ====  MENU-BURGER  ==========================================================
+// =============================================================================
+#menu-burger {
+  font-size: 3rem;
+  margin-right: 3rem;
+  width: 120px;
+  height: 60px;
+  border: {
+    width: 10px;
+    style: solid;
+    color: $primary-color-white;
+    radius: 2rem;
+    top: 0px;
+  }
+
+  &:hover {
+    cursor: pointer;
+  }
+
+  @media screen and (max-width: 720px) {
+    margin: 0;
+    width: 80px;
+    height: 40px;
+    font-size: 2rem;
+    border-width: 6px;
+  }
+}
+
+// =============================================================================
+// ====  NAME-LOGO  ============================================================
+// =============================================================================
+#name-logo-container {
+  display: flex;
+  align-items: center;
+
+  #header-logo {
+    max-width: 100%;
+    padding: 1rem;
+    // hide logo when screen is less than 700px;
+    @media screen and (max-width: 720px) {
+      display: none;
+    }
+  }
+
+  &:focus {
+    outline: none;
+  }
+  &:hover {
+    cursor: pointer;
+  }
+
+  #header-title { // "JRSweb" full header
+    @include font-set(5rem, 400, $primary-color-black, italic);
+    margin-left: 1.5rem;
+    text-decoration: underline;
+    text-decoration-color: $primary-color-white;
+
+    @media screen and (max-width: 720px) {
+      margin: 0;
+    }
+
+    span:first-child { // 'JRS'
+      font-weight: 700;
+      font-style: normal;
+      color: $primary-color-white;
+    }
+    span:nth-child(3) { // 'e'
+      color: $primary-color-blue;
+    }
+  }
+}

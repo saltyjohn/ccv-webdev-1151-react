@@ -1,8 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-import './header.NameLogo.scss';
-import logo from '../../../images/logo.png';
+import logo from '../images/logo.png';
 
 const NameLogo = props => (
   <div

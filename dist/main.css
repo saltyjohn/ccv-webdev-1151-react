@@ -164,6 +164,8 @@ textarea {
   padding: 0;
 }
 
+button {
+}
 
 /**
  * Show the overflow in IE.
@@ -344,3 +346,4 @@ template {
 [hidden] {
   display: none;
 }
+

@@ -1,8 +1,9 @@
 import React, { Component } from 'react';
 // import PropTypes from 'prop-types';
 
-import BAContainer from '../components/BAContainer/BAContainer';
+import BAContainer from '../components/BAContainer';
 import assignments from '../assignments';
+import PrevNextBtns from '../components/PrevNextBtns';
 
 class Assignments extends Component {
   constructor() {
@@ -10,23 +11,33 @@ class Assignments extends Component {
     this.state = {
       currentAssign: 1,
       completedAssignments: Object.keys(assignments).length,
+      modalOpen: false,
     };
     this.handleClick = this.handleClick.bind(this);
+    this.handleModal = this.handleModal.bind(this);
   }
 
   handleClick(e) {
     const targetID = e.currentTarget.id;
     let assignChange = 0;
-    if (targetID === 'prev-btn' && this.state.currentAssign > 1) {
-      assignChange = -1;
-    } else if (
-      targetID === 'next-btn' &&
-      this.state.currentAssign < this.state.completedAssignments
-    ) {
+
+    if (targetID === 'prev-btn' && this.state.currentAssign > 1) assignChange = -1;
+    else if (targetID === 'next-btn' && this.state.currentAssign < this.state.completedAssignments)
       assignChange = 1;
-    }
     this.setState({
       currentAssign: this.state.currentAssign + assignChange,
+    });
+  }
+
+  handleModal(e) {
+    const modalOpen = !this.state.modalOpen;
+    let newAssignment = this.state.currentAssign;
+    if (e.target.id !== 'assign-btn') {
+      newAssignment = Number(e.target.id.split('_')[1]);
+    }
+    this.setState({
+      currentAssign: newAssignment,
+      modalOpen,
     });
   }
 
@@ -37,29 +48,13 @@ class Assignments extends Component {
     return (
       <article>
         <h1>Assignments</h1>
-
-        <div id="next-prev">
-          <button
-            id="prev-btn"
-            className={this.state.currentAssign > 1 ? 'active' : ''}
-            onClick={this.handleClick}
-          >
-            <i className="fa fa-arrow-left" />
-            <span>Prev</span>
-          </button>
-
-          <h2>{assignObj.title}</h2>
-
-          <button
-            id="next-btn"
-            className={this.state.currentAssign < this.state.completedAssignments ? 'active' : ''}
-            onClick={this.handleClick}
-          >
-            <span>Next</span>
-            <i className="fa fa-arrow-right" />
-          </button>
-        </div>
-
+        <PrevNextBtns
+          handleModal={this.handleModal}
+          handleClick={this.handleClick}
+          title={assignObj.title}
+          assignLimit={this.state.completedAssignments}
+          current={this.state.currentAssign}
+        />
         {Object.keys(currentBA).map(item => (
           <BAContainer
             title={currentBA[item].title}
@@ -68,8 +63,28 @@ class Assignments extends Component {
             aSrc={currentBA[item].after.src}
             aAlt={currentBA[item].after.alt}
             key={`${currentBA[item].title}${item}`}
+            wait={250 + 350 * (item - 1)}
           />
         ))}
+        {/* W3 school modal */}
+        <div
+          style={{ display: this.state.modalOpen ? 'block' : 'none' }}
+          id="assign-modal"
+          className="assign-modal"
+        >
+          <div>
+            <h2>Pick The Assignment {`You'd`} Like to See:</h2>
+            {Object.keys(assignments).map(num => (
+              <button
+                id={`modal_${assignments[num].title}`}
+                key={`modal_${num}`}
+                onClick={this.handleModal}
+              >
+                {assignments[num].title}
+              </button>
+            ))}
+          </div>
+        </div>
       </article>
     );
   }

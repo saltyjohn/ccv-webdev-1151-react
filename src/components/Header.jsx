@@ -1,10 +1,10 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 
-import NameLogo from './components/Header.NameLogo';
-import MenuBurger from './components/Header.MenuBurger';
-import Menu from './components/Header.Menu';
-import './header.scss';
+import NameLogo from './Header.NameLogo';
+import MenuBurger from './Header.MenuBurger';
+import Menu from './Header.Menu';
+import '../scss/Header.scss';
 
 class Header extends Component {
   constructor(props) {

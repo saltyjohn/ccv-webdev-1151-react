@@ -1,14 +1,14 @@
 import React, { Component } from 'react';
 
-import Header from './Header/Header';
-import ContentWrapper from './ContentWrapper/ContentWrapper';
+import Header from './Header';
+import ContentWrapper from './ContentWrapper';
 
 class App extends Component {
   constructor() {
     super();
     this.state = {
-      // currentView: 'assignments_page',
-      currentView: 'home_page',
+      currentView: 'assignments_page',
+      // currentView: 'home_page',
     };
     this.changeView = this.changeView.bind(this);
   }

@@ -1,10 +1,10 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-import Home from '../../pages/Home';
-import About from '../../pages/About';
-import Assignments from '../../pages/Assignments';
-import './ContentWrapper.scss';
+import Home from '../pages/Home';
+import About from '../pages/About';
+import Assignments from '../pages/Assignments';
+import '../scss/ContentWrapper.scss';
 
 const pageDirectory = {
   home_page: <Home />,
