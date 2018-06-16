@@ -82,6 +82,9 @@ class Assignments extends Component {
           role="button"
           className="assign-modal"
           onClick={this.closeModal}
+          // keyPress does not handle closing...
+          onKeyPress={this.closeModal}
+          tabIndex="0"
         >
           <div>
             <h2>Pick The Assignment {`You'd`} Like to See:</h2>
