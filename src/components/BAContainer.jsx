@@ -8,10 +8,11 @@ class AssignContainer extends Component {
       hidden: 'hidden',
     };
   }
+
   componentWillMount() {
-    const that = this;
+    // const that = this;
     setTimeout(() => {
-      that.show();
+      this.show();
     }, this.props.wait);
   }
 
@@ -26,11 +27,11 @@ class AssignContainer extends Component {
         {/* {console.log(props)} */}
         <h3>{this.props.title}</h3>
         <div>
-          <a className="before-link" href={this.props.bSrc} alt={this.props.bAlt} target="_blank">
+          <a href={this.props.bSrc} alt={this.props.bAlt} target="_blank">
             Before
           </a>
           |
-          <a className="after-link" href={this.props.aSrc} alt={this.props.aAlt} target="_blank">
+          <a href={this.props.aSrc} alt={this.props.aAlt} target="_blank">
             After
           </a>
         </div>

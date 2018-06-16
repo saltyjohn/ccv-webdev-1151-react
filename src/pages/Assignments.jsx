@@ -9,12 +9,13 @@ class Assignments extends Component {
   constructor() {
     super();
     this.state = {
-      currentAssign: 1,
+      currentAssign: Object.keys(assignments).length,
       completedAssignments: Object.keys(assignments).length,
       modalOpen: false,
     };
     this.handleClick = this.handleClick.bind(this);
     this.handleModal = this.handleModal.bind(this);
+    this.closeModal = this.closeModal.bind(this);
   }
 
   handleClick(e) {
@@ -41,6 +42,14 @@ class Assignments extends Component {
     });
   }
 
+  closeModal(e) {
+    if (e.target.id === 'assign-modal') {
+      this.setState({
+        modalOpen: !this.state.modalOpen,
+      });
+    }
+  }
+
   render() {
     const assignKey = `assignment_${this.state.currentAssign}`;
     const assignObj = assignments[assignKey];
@@ -63,14 +72,16 @@ class Assignments extends Component {
             aSrc={currentBA[item].after.src}
             aAlt={currentBA[item].after.alt}
             key={`${currentBA[item].title}${item}`}
-            wait={250 + 350 * (item - 1)}
+            wait={250 + 150 * (item - 1)}
           />
         ))}
         {/* W3 school modal */}
         <div
           style={{ display: this.state.modalOpen ? 'block' : 'none' }}
           id="assign-modal"
+          role="button"
           className="assign-modal"
+          onClick={this.closeModal}
         >
           <div>
             <h2>Pick The Assignment {`You'd`} Like to See:</h2>
