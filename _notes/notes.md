@@ -72,3 +72,15 @@
   - ideas from:
     = https://blog.campvanilla.com/reactjs-dropdown-menus-b6e06ae3a8fe
   - transition: https://css-tricks.com/almanac/properties/t/transition/
+
+
+# Day 3
+  - Content Wrapper
+    = Needed a way to change views for content
+    = created stateless functions for individual pages [about, home,assignments].
+    =
+
+
+# Day 4
+  - Flex on the main page div!
+  - Selecting from menu clears footer nav titles...

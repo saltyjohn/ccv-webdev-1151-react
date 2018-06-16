@@ -29,7 +29,7 @@ class Header extends Component {
   render() {
     return (
       <header role="banner">
-        <div className="menu-row">
+        <div className="header-top-row">
           <NameLogo handleView={this.props.handleView} />
           <MenuBurger open={this.state.menuOpen} onClick={this.handleClick} />
         </div>

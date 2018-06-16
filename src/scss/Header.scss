@@ -11,7 +11,7 @@ header {
   background-color: $primary-background-color;
   color: $primary-color-black;
 
-  .menu-row {
+  .header-top-row {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -35,6 +35,7 @@ header {
 // ====  MENU  =================================================================
 // =============================================================================
 
+// menu-variables
 $menu-height: 42px;
 $menu-height-mobile: 2 * $menu-height;
 
@@ -129,10 +130,13 @@ $menu-height-mobile: 2 * $menu-height;
 @media screen and (max-width: 720px) {
   @keyframes fade-in {
     0% {
-      font-size: .1rem;
+      // font-size: .1rem;
       line-height: 0;
       height: 0;
       opacity: 0;
+    }
+    50% {
+      opacity: 0%
     }
     100% {
       height: $menu-height-mobile;
