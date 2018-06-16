@@ -12,12 +12,17 @@ class Footer extends Component {
   render() {
     return (
       <footer>
-        <button>
+        <button
+          id={this.props.previous}
+          className="footer-btn"
+          onClick={this.props.handleClick}
+          data-move="-1"
+        >
           <i className="fa fa-arrow-circle-left" />
-          {this.props.previous}
+          <span>{this.props.previous.split('_')[0]}</span>
         </button>
-        <button>
-          {this.props.next}
+        <button id={this.props.next} className="footer-btn" onClick={this.props.handleClick}>
+          <span>{this.props.next.split('_')[0]}</span>
           <i className="fa fa-arrow-circle-right" />
         </button>
       </footer>
@@ -28,6 +33,7 @@ class Footer extends Component {
 Footer.propTypes = {
   previous: PropTypes.string.isRequired,
   next: PropTypes.string.isRequired,
+  handleClick: PropTypes.func.isRequired,
 };
 
 export default Footer;
