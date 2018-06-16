@@ -21,3 +21,8 @@ $primary-color-brown: #73645A;
   }
   color: $color;
 }
+
+// jrs-web/root
+#root, #jrs-web {
+  height: 100%;
+}

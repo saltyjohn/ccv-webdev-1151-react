@@ -18,15 +18,11 @@ class Header extends Component {
 
   handleClick(e) {
     const targetID = e.target.id;
-    switch (targetID) {
-      case 'menu-burger-icon':
-        this.setState({
-          menuFirstLoad: false,
-          menuOpen: !this.state.menuOpen,
-        });
-        break;
-      default:
-        break;
+    if (targetID === 'menu-burger-icon') {
+      this.setState({
+        menuFirstLoad: false,
+        menuOpen: !this.state.menuOpen,
+      });
     }
   }
 

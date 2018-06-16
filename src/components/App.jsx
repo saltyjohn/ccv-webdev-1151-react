@@ -2,13 +2,16 @@ import React, { Component } from 'react';
 
 import Header from './Header';
 import ContentWrapper from './ContentWrapper';
+import Footer from './Footer';
 
 class App extends Component {
   constructor() {
     super();
     this.state = {
-      currentView: 'assignments_page',
-      // currentView: 'home_page',
+      // currentView: 'assignments_page',
+      currentView: 'home_page',
+      prevPage: '',
+      nextPage: '',
     };
     this.changeView = this.changeView.bind(this);
   }
@@ -28,6 +31,7 @@ class App extends Component {
       <div id="jrs-web">
         <Header handleView={this.changeView} />
         <ContentWrapper currentView={this.state.currentView} />
+        <Footer previous={this.state.nextPage} next={this.state.prevPage} />
       </div>
     );
   }
