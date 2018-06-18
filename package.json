@@ -9,6 +9,8 @@
     "build": "webpack --mode production"
   },
   "keywords": [
+    "ccv",
+    "webdev-1151",
     "react",
     "webpack",
     "babel",
