@@ -15,7 +15,6 @@ class App extends Component {
     };
     this.changeView = this.changeView.bind(this);
   }
-
   changeView(e) {
     const cTargetClass = e.currentTarget.className;
     let prevPage = '';
