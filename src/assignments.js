@@ -104,14 +104,14 @@ const assignments = {
         },
       },
       '3': {
-        title: 'Favicon/ Home Page',
+        title: 'Improved Background & Padding',
         before: {
           src: 'http://jrs12220.classweb.ccv.edu/WebDev/routes/assignment03/before03.html',
-          alt: 'Favicon, before',
+          alt: 'Background & Padding, before',
         },
         after: {
           src: 'http://jrs12220.classweb.ccv.edu/WebDev/',
-          alt: 'Homepage, after',
+          alt: 'Background & Padding, after',
         },
       },
     },
@@ -123,11 +123,11 @@ const assignments = {
       '1': {
         title: 'Specificity',
         before: {
-          src: 'http://jrs12220.classweb.ccv.edu/WebDev/routes/assignment03/before01.html',
+          src: 'http://jrs12220.classweb.ccv.edu/WebDev/routes/assignment04/before01.html',
           alt: 'Specificity, before',
         },
         after: {
-          src: 'http://jrs12220.classweb.ccv.edu/WebDev/routes/assignment03/after01.html',
+          src: 'http://jrs12220.classweb.ccv.edu/WebDev/routes/assignment04/after01.html',
           alt: 'Specificity, after',
         },
       },
@@ -151,6 +151,84 @@ const assignments = {
         after: {
           src: 'http://jrs12220.classweb.ccv.edu/WebDev/routes/assignment04/after03.html',
           alt: 'Media Print, after',
+        },
+      },
+    },
+  },
+  assignment_5: {
+    id: 'assignment_05',
+    title: '05',
+    before_after: {
+      '1': {
+        title: 'Link State',
+        before: {
+          src: 'http://jrs12220.classweb.ccv.edu/WebDev/routes/assignment05/before01.html',
+          alt: 'Link State, before',
+        },
+        after: {
+          src: 'http://jrs12220.classweb.ccv.edu/WebDev/routes/assignment05/after01.html',
+          alt: 'Link State, after',
+        },
+      },
+      '2': {
+        title: 'Font Shorthand',
+        before: {
+          src: 'http://jrs12220.classweb.ccv.edu/WebDev/routes/assignment05/before02.html',
+          alt: 'Font Shorthand, before',
+        },
+        after: {
+          src: 'http://jrs12220.classweb.ccv.edu/WebDev/routes/assignment05/after02.html',
+          alt: 'Font Shorthand, after',
+        },
+      },
+      '3': {
+        title: 'Improved Background & Padding',
+        before: {
+          src: 'http://jrs12220.classweb.ccv.edu/WebDev/routes/assignment05/before03.html',
+          alt: 'Background & Padding, before',
+        },
+        after: {
+          src: 'http://jrs12220.classweb.ccv.edu/WebDev/routes/assignment05/after03.html',
+          alt: 'Background & Padding, after',
+        },
+      },
+    },
+  },
+  assignment_6: {
+    id: 'assignment_06',
+    title: '06',
+    before_after: {
+      '1': {
+        title: 'Borders',
+        before: {
+          src: 'http://jrs12220.classweb.ccv.edu/WebDev/routes/assignment06/before01.html',
+          alt: 'Borders, before',
+        },
+        after: {
+          src: 'http://jrs12220.classweb.ccv.edu/WebDev/routes/assignment06/after01.html',
+          alt: 'Borders, after',
+        },
+      },
+      '2': {
+        title: 'Overflow',
+        before: {
+          src: 'http://jrs12220.classweb.ccv.edu/WebDev/routes/assignment06/before02.html',
+          alt: 'Overflow, before',
+        },
+        after: {
+          src: 'http://jrs12220.classweb.ccv.edu/WebDev/routes/assignment06/after02.html',
+          alt: 'Overflow, after',
+        },
+      },
+      '3': {
+        title: 'Vertical Align',
+        before: {
+          src: 'http://jrs12220.classweb.ccv.edu/WebDev/routes/assignment06/before03.html',
+          alt: 'Vertical Align, before',
+        },
+        after: {
+          src: 'http://jrs12220.classweb.ccv.edu/WebDev/routes/assignment06/after03.html',
+          alt: 'Vertical Align, after',
         },
       },
     },
