@@ -26,19 +26,20 @@ class App extends Component {
     } else if (cTargetClass === 'footer-btn') {
       // handle footer buttons, and update page titles
       targetID = e.currentTarget.id;
-      const ref = this.state.pageRef;
-      let nextNum = ref.indexOf(targetID) + 1;
-      let prevNum = ref.indexOf(targetID) - 1;
-
-      if (prevNum < 0) {
-        prevNum = ref.length - 1;
-      } else if (nextNum > ref.length - 1) {
-        nextNum = 0;
-      }
-
-      prevPage = ref[prevNum];
-      nextPage = ref[nextNum];
     }
+    const ref = this.state.pageRef;
+    let nextNum = ref.indexOf(targetID) + 1;
+    let prevNum = ref.indexOf(targetID) - 1;
+
+    if (prevNum < 0) {
+      prevNum = ref.length - 1;
+    } else if (nextNum > ref.length - 1) {
+      nextNum = 0;
+    }
+
+    prevPage = ref[prevNum];
+    nextPage = ref[nextNum];
+
     this.setState({
       currentView: targetID,
       prevPage,
