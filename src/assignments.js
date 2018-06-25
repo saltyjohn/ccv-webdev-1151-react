@@ -233,6 +233,45 @@ const assignments = {
       },
     },
   },
+  assignment_7: {
+    id: 'assignment_07',
+    title: '07',
+    before_after: {
+      '1': {
+        title: 'Parallax',
+        before: {
+          src: 'http://jrs12220.classweb.ccv.edu/WebDev/routes/assignment07/before01.html',
+          alt: 'Parallax, before',
+        },
+        after: {
+          src: 'http://jrs12220.classweb.ccv.edu/WebDev/routes/assignment07/after01.html',
+          alt: 'Parallax, after',
+        },
+      },
+      '2': {
+        title: 'Animate',
+        before: {
+          src: 'http://jrs12220.classweb.ccv.edu/WebDev/routes/assignment07/before02.html',
+          alt: 'Animate, before',
+        },
+        after: {
+          src: 'http://jrs12220.classweb.ccv.edu/WebDev/routes/assignment07/after02.html',
+          alt: 'Animate, after',
+        },
+      },
+      '3': {
+        title: 'Z-Index',
+        before: {
+          src: 'http://jrs12220.classweb.ccv.edu/WebDev/routes/assignment07/before03.html',
+          alt: 'Z-Index, before',
+        },
+        after: {
+          src: 'http://jrs12220.classweb.ccv.edu/WebDev/routes/assignment07/after03.html',
+          alt: 'Z-Index, after',
+        },
+      },
+    },
+  },
 };
 
 export default assignments;
