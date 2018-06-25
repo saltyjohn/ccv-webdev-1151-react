@@ -272,6 +272,45 @@ const assignments = {
       },
     },
   },
+  assignment_8: {
+    id: 'assignment_08',
+    title: '08',
+    before_after: {
+      '1': {
+        title: 'W3 Fonts Tutorial',
+        before: {
+          src: 'http://jrs12220.classweb.ccv.edu/WebDev/routes/assignment08/before01.html',
+          alt: 'W3 Fonts Tutorial, before',
+        },
+        after: {
+          src: 'http://jrs12220.classweb.ccv.edu/WebDev/routes/assignment08/after01.html',
+          alt: 'W3 Fonts Tutorial, after',
+        },
+      },
+      '2': {
+        title: 'Icons',
+        before: {
+          src: 'http://jrs12220.classweb.ccv.edu/WebDev/routes/assignment08/before02.html',
+          alt: 'Icons, before',
+        },
+        after: {
+          src: 'http://jrs12220.classweb.ccv.edu/WebDev/routes/assignment08/after02.html',
+          alt: 'Icons, after',
+        },
+      },
+      '3': {
+        title: 'Transform',
+        before: {
+          src: 'http://jrs12220.classweb.ccv.edu/WebDev/routes/assignment08/before03.html',
+          alt: 'Transform, before',
+        },
+        after: {
+          src: 'http://jrs12220.classweb.ccv.edu/WebDev/routes/assignment08/after03.html',
+          alt: 'Transform, after',
+        },
+      },
+    },
+  },
 };
 
 export default assignments;
