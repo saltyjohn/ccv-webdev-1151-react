@@ -65,6 +65,7 @@ class Assignments extends Component {
           current={this.state.currentAssign}
         />
         {Object.keys(currentBA).map(item => (
+          // TODO: Need stable way to implement delayed iteration
           <BAContainer
             title={currentBA[item].title}
             bSrc={currentBA[item].before.src}
@@ -72,7 +73,6 @@ class Assignments extends Component {
             aSrc={currentBA[item].after.src}
             aAlt={currentBA[item].after.alt}
             key={`${currentBA[item].title}${item}`}
-            wait={250 + 150 * (item - 1)}
           />
         ))}
         {/* W3 school modal */}
