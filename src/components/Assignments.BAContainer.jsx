@@ -27,11 +27,11 @@ class AssignContainer extends Component {
         {/* {console.log(props)} */}
         <h3>{this.props.title}</h3>
         <div>
-          <a href={this.props.bSrc} alt={this.props.bAlt} target="_blank">
+          <a href={this.props.bSrc} alt={this.props.bAlt} target="_blank" rel="noopener noreferrer">
             Before
           </a>
           |
-          <a href={this.props.aSrc} alt={this.props.aAlt} target="_blank">
+          <a href={this.props.aSrc} alt={this.props.aAlt} target="_blank" rel="noopener noreferrer">
             After
           </a>
         </div>

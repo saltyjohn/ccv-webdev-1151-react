@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 // import PropTypes from 'prop-types';
 
-import BAContainer from '../components/BAContainer';
-import PrevNextBtns from '../components/PrevNextBtns';
+import BAContainer from '../components/Assignments.BAContainer';
+import PrevNextBtns from '../components/Assignments.PrevNextBtns';
 import assignments from '../assignments';
 
 class Assignments extends Component {
