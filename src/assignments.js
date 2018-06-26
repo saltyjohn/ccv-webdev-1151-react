@@ -311,6 +311,45 @@ const assignments = {
       },
     },
   },
+  assignment_9: {
+    id: 'assignment_09',
+    title: '09',
+    before_after: {
+      '1': {
+        title: 'Navigation Bug Fix',
+        before: {
+          src: 'http://jrs12220.classweb.ccv.edu/WebDev/routes/assignment09/before01',
+          alt: 'Navigation Bug Fix, before',
+        },
+        after: {
+          src: 'http://jrs12220.classweb.ccv.edu/WebDev/routes/assignment09/after01',
+          alt: 'Navigation Bug Fix, after',
+        },
+      },
+      '2': {
+        title: 'Workflow',
+        before: {
+          src: 'http://jrs12220.classweb.ccv.edu/WebDev/routes/assignment09/before02',
+          alt: 'Workflow, before',
+        },
+        after: {
+          src: 'http://jrs12220.classweb.ccv.edu/WebDev/routes/assignment09/after02',
+          alt: 'Workflow, after',
+        },
+      },
+      '3': {
+        title: 'setTimeout()',
+        before: {
+          src: 'http://jrs12220.classweb.ccv.edu/WebDev/routes/assignment09/before01',
+          alt: 'setTimeout(), before',
+        },
+        after: {
+          src: 'http://jrs12220.classweb.ccv.edu/WebDev/routes/assignment09/after03',
+          alt: 'setTimeout(), after',
+        },
+      },
+    },
+  },
 };
 
 export default assignments;
