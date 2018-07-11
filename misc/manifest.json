@@ -1,0 +1,16 @@
+{
+  "short_namme": "jrsWD",
+  "name": "jrsWebDev",
+  "icons": [
+    {
+      "src": "/images",
+      "type": "image.png",
+      "sizes": "192x192"
+    },
+    {
+      "src": "/images",
+      "type": "image.png",
+      "sizes": "512x512"
+    }
+  ]
+}

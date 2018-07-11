@@ -16,6 +16,9 @@ module.exports = {
         sourceMap: true, // set to true if you want JS source maps
       }),
     ],
+    // runtimeChunk: {
+    //   name: 'manifest',
+    // },
   },
   module: {
     rules: [
