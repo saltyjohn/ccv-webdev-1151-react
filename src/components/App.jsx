@@ -48,15 +48,13 @@ class App extends Component {
   }
 
   render() {
+    const { prevPage, nextPage, currentView } = this.state;
+    const { changeView } = this;
     return (
       <div id="jrs-web">
-        <Header handleView={this.changeView} />
-        <ContentWrapper currentView={this.state.currentView} />
-        <Footer
-          previous={this.state.prevPage}
-          next={this.state.nextPage}
-          handleClick={this.changeView}
-        />
+        <Header handleView={changeView} />
+        <ContentWrapper currentView={currentView} />
+        <Footer previous={prevPage} next={nextPage} handleClick={changeView} />
       </div>
     );
   }
